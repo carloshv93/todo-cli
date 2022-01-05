@@ -1,6 +1,6 @@
-## Tasks CLI
+## ToDo CLI
 
-Tasks CLI is a program to manage your tasks in a database using terminal or console. This is a sample project for beginners
+ToDo CLI is a program to manage your tasks in a database using terminal or console.
 
 ### Requirements
 
