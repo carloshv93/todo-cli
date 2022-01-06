@@ -5,7 +5,7 @@ const {
   updateTask,
   removeTask,
   listTasks,
-} = require("./controllers/task.controller");
+} = require("./controllers/task");
 const { prompt } = require("inquirer");
 
 const taskQuestion = [
