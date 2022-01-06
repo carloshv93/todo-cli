@@ -12,10 +12,6 @@ const findTask = async (title) => {
   const tasks = await Task.find({
     $or: [{ title: search }, { description: search }],
   }).lean();
-  // console.log(JSON.stringify(task, null, 2));
-  // console.log(tasks[0]);
-  // console.table(Object.entries(tasks[0]));
-
   if (tasks.length === 0) {
     console.log("No tasks Found");
     await connection.close();
@@ -47,7 +43,6 @@ const removeTask = async (_id) => {
 const listTasks = async () => {
   const tasks = await Task.find().lean();
   console.log(`Total Tasks Result: ${tasks.length}`);
-  // console.info(tasks);
   console.table(
     tasks.map((task) => ({
       _id: task._id.toString(),
